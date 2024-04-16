@@ -55,13 +55,13 @@ $totalPages = ceil($rowCount / $itemsPerPage);
 </head>
 <body data-rsssl=1 class="home page-template-default page page-id-5680 _masterslider _msp_version_3.2.7 woocommerce-no-js">
     <div class="body-wrapper  float-menu" data-home="https://demo.goodlayers.com/greennature/">
-        <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
+    <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
             <!-- top navigation -->
             <div class="top-navigation-wrapper">
                 <div class="top-navigation-container container">
                     <div class="top-navigation-left">
                         <div class="top-navigation-left-text">
-                            Phone : +1800-222-3333      Email : contact@yourdomain.com </div>
+                            Phone : +1800-222-3333      Email : contact@yourdomain.com </div>
                     </div>
                     <div class="top-navigation-right">
                         <div class="top-social-wrapper">
@@ -115,8 +115,8 @@ $totalPages = ceil($rowCount / $itemsPerPage);
                                 <li class="menu-item menu-item-home current-menu-item page_item page-item-5680 current_page_item"><a href="index.php" aria-current="page">Home</a></li>
                                 <li class="menu-item menu-item-has-children menu-item-15"><a href="#">Dashboard</a>
                                     <ul class="dl-submenu">
-                                        <li class="menu-item"><a href="dashboard.php">Today Dashboard</a></li>
-                                        <li class="menu-item"><a href="history.php">History Dashboard</a></li>
+                                        <li class="menu-item"><a href="todayDashboard.php">Today Dashboard</a></li>
+                                        <li class="menu-item"><a href="historyDashboard.php">History Dashboard</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
@@ -143,8 +143,8 @@ $totalPages = ceil($rowCount / $itemsPerPage);
                                 <li class="menu-item menu-item-home greennature-normal-menu"><a href="home.html"><i class="fa fa-home"></i>Home</a></li>
                                 <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="#" class="sf-with-ul-pre"><i class="fa fa-file-text-o"></i>Dashboard</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item"><a href="dashboard.php">Today Dashboard</a></li>
-                                        <li class="menu-item"><a href="history.php">History Dashboard</a></li>
+                                        <li class="menu-item"><a href="todayDashboard.php">Today Dashboard</a></li>
+                                        <li class="menu-item"><a href="historyDashboard.php">History Dashboard</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="#" class="sf-with-ul-pre"><i class="fa fa-file-text-o"></i>Blog</a>
@@ -153,10 +153,14 @@ $totalPages = ceil($rowCount / $itemsPerPage);
                                         <li class="menu-item"><a href="calender2.html">Calendar</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-normal-menu"><a href="account.php" class="sf-with-ul-pre">My Account</a>
+                                <!-- My Account Section -->
+                                <li class="menu-item menu-item-has-childrenmenu-item menu-item-has-children greennature-normal-menu">
+                                    <a href="account.php" class="sf-with-ul-pre">My Account</a>
                                     <ul class="sub-menu">
+                                        <!-- Profile Section -->
+                                        <li class="menu-item"><a href="profile.php">Profile</a></li>
                                         <li class="menu-item"><a href="survey.html">Survey</a></li>
-                                        <li class="menu-item menu-item-has-children menu-item-"><a href="Social.php" class="sf-with-ul-pre">Share To Social Media</a>
+                                        <li class="menu-item menu-item-has-children menu-item-"><a href="socialmedia.php" class="sf-with-ul-pre">Share To Social Media</a>
                                     </ul>
                                 </li>
                             </ul>
@@ -170,8 +174,8 @@ $totalPages = ceil($rowCount / $itemsPerPage);
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
-                </div>
-            </div>
+                </div>               
+            </div><br>
         </header>
         <!-- is search -->
         
@@ -471,7 +475,7 @@ $totalPages = ceil($rowCount / $itemsPerPage);
 
     <!-- body-wrapper -->
 
-    <script type='text/javascript' src='js/jquery/jquery.js'></script>
+<script type='text/javascript' src='js/jquery/jquery.js'></script>
 <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='plugins/superfish/js/superfish.js'></script>
 <script type='text/javascript' src='js/hoverIntent.min.js'></script>
@@ -487,10 +491,7 @@ $totalPages = ceil($rowCount / $itemsPerPage);
 <script type='text/javascript' src='js/isotope.js'></script>
 <script type='text/javascript' src='plugins/jquery.transit.min.js'></script>
 <script type='text/javascript' src='plugins/gdlr-portfolio/gdlr-portfolio-script.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-
-    <!-- JS Files End -->
+<!-- JS Files End -->
 
 </body>
 </html>
